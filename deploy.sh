@@ -6,7 +6,7 @@ docker push barisozcanli/multi-server:latest
 docker push barisozcanli/multi-worker:latest
 
 docker push barisozcanli/multi-client:$SHA
-docker push barisozcnali/multi-server:$SHA
+docker push barisozcanli/multi-server:$SHA
 docker push barisozcanli/multi-worker:$SHA
 kubectl apply -f k8s
 kubectl set image deployments/server-deployment server=barisozcanli/multi-server:$SHA
