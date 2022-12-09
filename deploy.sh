@@ -2,7 +2,7 @@ docker build -t barisozcanli/multi-client:latest -t barisozcanli/multi-client:$S
 docker build -t barisozcanli/multi-server:latest -t barisozcanli/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t barisozcanli/multi-worker:latest -t barisozcanli/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 docker push barisozcanli/multi-client:latest
-docker push barisozcnali/multi-server:latest
+docker push barisozcanli/multi-server:latest
 docker push barisozcanli/multi-worker:latest
 
 docker push barisozcanli/multi-client:$SHA
